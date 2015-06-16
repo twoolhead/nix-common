@@ -4,7 +4,7 @@
     printf("ConvertingInput{expression=%s, conversion=%s}\n", expression, conversion);
   } {
       for(field=1;field<=NF;field++) {
-        if($field ~ /expression/){
+        if($field ~ expression){
           $field=sprintf(conversion, $field);
         }
       } 
