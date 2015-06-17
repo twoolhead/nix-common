@@ -1,0 +1,33 @@
+# Common functions for file and directory operations.
+
+function exists() {
+	[[ -e $1 ]];
+}
+
+function isDir() {
+	[[ -d $1 ]];
+}
+
+function isFile() {
+	[[ -f $1 ]];
+}
+
+function canRead() {
+	[[ -r $1 ]];
+}
+
+function canWrite() {
+	[[ -w $1 ]];
+}
+
+function canExecute() {
+	[[ -x $1 ]];
+}
+
+function isReWrEx() {
+	[[ -r $1 ]] && [[ -w $1 ]] && [[ -x $1 ]];
+}
+
+function isEmpty() {
+	[[ ! -s $1 ]]; 
+}
