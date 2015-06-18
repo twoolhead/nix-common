@@ -1,0 +1,9 @@
+# General purpose functions.
+
+function u2w() {
+	echo "$1" | sed -n 's@/@\\@gp'
+}
+
+function w2u() {
+	echo "$1" | sed -n 's@\\@/@gp' 
+}
