@@ -9,5 +9,8 @@ alias grdo='git remote rm origin'
  # Generic
 alias gs='git status'
 alias gc='git commit -m'
-alias ga='git add'
+alias gd='git add'
 alias gl='git log'
+alias gush='git push'
+alias gull='git pull'
+
