@@ -1,0 +1,13 @@
+# Alias' collection.
+
+# Git
+ # Remote
+alias grv='git remote -v'
+alias grao='git remote add origin'
+alias grdo='git remote rm origin'
+
+ # Generic
+alias gs='git status'
+alias gc='git commit -m'
+alias ga='git add'
+alias gl='git log'
