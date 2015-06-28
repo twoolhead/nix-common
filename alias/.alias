@@ -6,11 +6,17 @@ alias grv='git remote -v'
 alias grao='git remote add origin'
 alias grdo='git remote rm origin'
 
+ # Config
+alias gcfs='git config --system'
+alias gcfg='git config --global'
+alias gcfl='git config'
+
  # Generic
 alias gs='git status'
 alias gc='git commit -m'
 alias ga='git add'
 alias gl='git log'
+alias gl1='git log --oneline'
 alias gush='git push'
 alias gull='git pull'
 alias grmd='git rm -r'
