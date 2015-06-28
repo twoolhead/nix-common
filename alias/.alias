@@ -17,6 +17,11 @@ alias gl1='git log --oneline'
 alias gl1g='git log --oneline --graph'
 alias gls='git shortlog'
 alias glss='git shortlog -sn'
+alias gld='git log --oneline --graph --all --decorate'
+ # Revive old head pointer if we have mistakenly deleted
+alias grl='git reflog'
+ # Compare cache and repo
+alias gdc='git diff --cached'
 
  # Generic
 alias gs='git status'
@@ -24,6 +29,20 @@ alias gc='git commit -m'
 alias ga='git add'
 alias grmd='git rm -r'
 alias gi='git init'
+alias grset='git reset --hard HEAD'
+
+# Stashing
+alias gstl='git stash list'
+ # Cache temp changes wihtout committing them
+alias gst='git stash'
+ # Remains in stash stack
+alias gsta='git stash apply'
+ # Removes from stash stack 
+alias gstp='git stash pop'
+ # drop stash entry
+alias gstd='git stash drop'
+ # Apply stash to new branch {name}
+alias gstb='git stash branch'
 
  # Merging changes
 alias gf='git fetch'
@@ -31,6 +50,13 @@ alias gm='git merge'
   # ^^ same as below
 alias gull='git pull'
 alias gush='git push'
+alias gmerg='git mergetool'
+ # Remember to merge when rebase is successful
+alias grb='git rebase'
+ # When we have resolved conflicts during init rebase
+alias grbc='git rebase --continue'
+ # Cherry picking exactly one change [a-b|0-9]
+alias gcp='git cherry-pick'
 
  # Commit analysis
   # show [0-9|a-b] -> to get specific delta, ^ gl1
@@ -38,10 +64,17 @@ alias gsh='git show'
   # show HEAD~[0-9] -> to get depth from head commit
 alias gshh='git show HEAD'
 
- # {Branch, Tag}ing
+ # {Branch,Tag}ing
+  # With tag|branch {name}
+   # With branch {name} and {tag|#commit}
+alias gco='git checkout'
 alias gbr='git branch'
+ # ^^ Equiv
+alias gcob='git checkout -b'
 alias gbrr='git branch -r'
- # With name tag {name}
+alias gbrmv='git branch -m'
+alias gbrm='git branch -d'
+alias gbrmf='git branch -D'
 alias gtg='git tag'
  # With crypto signature
 alias gtgs='git tag -s'
