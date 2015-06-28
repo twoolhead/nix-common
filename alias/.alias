@@ -36,6 +36,11 @@ alias grsets='git reset --soft'
 alias grseth='git reset --hard'
  # With 2 # abbrev #..# or built in variable for latest commit HEAD~2..HEAD~1 or even further HEAD~1
 alias gdif='git diff'
+ # Suggested clean unstaged one sweep
+alias gcln='git clean -n'
+  # Clean them out
+alias gclnf='git clean -f'
+
 
 # Stashing
 alias gstl='git stash list'
