@@ -22,13 +22,18 @@ alias glss='git shortlog -sn'
 alias gs='git status'
 alias gc='git commit -m'
 alias ga='git add'
-alias gush='git push'
-alias gull='git pull'
 alias grmd='git rm -r'
 alias gi='git init'
 alias gbr='git branch'
 alias gbrr='git branch -r'
 alias gtg='git tag'
+
+ # Merging changes
+alias gf='git fetch'
+alias gm='git merge'
+  # ^^ same as below
+alias gull='git pull'
+alias gush='git push'
 
  # Commit analysis
   # show [0-9|a-b] -> to get specific delta, ^ gl1
