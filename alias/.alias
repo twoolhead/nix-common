@@ -24,9 +24,6 @@ alias gc='git commit -m'
 alias ga='git add'
 alias grmd='git rm -r'
 alias gi='git init'
-alias gbr='git branch'
-alias gbrr='git branch -r'
-alias gtg='git tag'
 
  # Merging changes
 alias gf='git fetch'
@@ -41,3 +38,14 @@ alias gsh='git show'
   # show HEAD~[0-9] -> to get depth from head commit
 alias gshh='git show HEAD'
 
+ # {Branch, Tag}ing
+alias gbr='git branch'
+alias gbrr='git branch -r'
+ # With name tag {name}
+alias gtg='git tag'
+ # With crypto signature
+alias gtgs='git tag -s'
+ # With message
+alias gtgm='git tag -a'
+ # Verify signature
+alias gtgv='git tag -v'
