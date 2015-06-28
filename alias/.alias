@@ -1,23 +1,38 @@
-# Alias' collection.
+# Git alias collection.
 
-# Git
  # Remote
 alias grv='git remote -v'
 alias grao='git remote add origin'
 alias grdo='git remote rm origin'
 
  # Config
+  # --list to list contents if(config-file)
 alias gcfs='git config --system'
 alias gcfg='git config --global'
 alias gcfl='git config'
+
+ # Logging and statistics
+alias gl='git log'
+alias gl1='git log --oneline'
+alias gl1g='git log --oneline --graph'
+alias gls='git shortlog'
+alias glss='git shortlog -sn'
 
  # Generic
 alias gs='git status'
 alias gc='git commit -m'
 alias ga='git add'
-alias gl='git log'
-alias gl1='git log --oneline'
 alias gush='git push'
 alias gull='git pull'
 alias grmd='git rm -r'
 alias gi='git init'
+alias gbr='git branch'
+alias gbrr='git branch -r'
+alias gtg='git tag'
+
+ # Commit analysis
+  # show [0-9|a-b] -> to get specific delta, ^ gl1
+alias gsh='git show'
+  # show HEAD~[0-9] -> to get depth from head commit
+alias gshh='git show HEAD'
+
