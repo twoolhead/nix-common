@@ -27,9 +27,15 @@ alias gdc='git diff --cached'
 alias gs='git status'
 alias gc='git commit -m'
 alias ga='git add'
+ # Add everything staged + unstaged
+alias gaa='git add -A'
 alias grmd='git rm -r'
 alias gi='git init'
-alias grset='git reset --hard HEAD'
+ # Revert previous commit, use with HEAD~1
+alias grsets='git reset --soft'
+alias grseth='git reset --hard'
+ # With 2 # abbrev #..# or built in variable for latest commit HEAD~2..HEAD~1 or even further HEAD~1
+alias gdif='git diff'
 
 # Stashing
 alias gstl='git stash list'
@@ -67,6 +73,7 @@ alias gshh='git show HEAD'
  # {Branch,Tag}ing
   # With tag|branch {name}
    # With branch {name} and {tag|#commit}
+    # With no changes staged checkout with file name can revert branch to original state
 alias gco='git checkout'
 alias gbr='git branch'
  # ^^ Equiv
