@@ -73,8 +73,12 @@ alias gbr='git branch'
 alias gcob='git checkout -b'
 alias gbrr='git branch -r'
 alias gbrmv='git branch -m'
+ # Local remove
 alias gbrm='git branch -d'
+  # Without prejudice
 alias gbrmf='git branch -D'
+  # Kill remote branch, push empty:{name}
+alias gbrmr='git push origin :'
 alias gtg='git tag'
  # With crypto signature
 alias gtgs='git tag -s'
