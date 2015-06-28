@@ -1,5 +1,8 @@
 # Git alias collection.
 
+ # Visualize changes
+alias gitviz='gitk --all &'
+
  # Remote
 alias grv='git remote -v'
 alias grao='git remote add origin'
